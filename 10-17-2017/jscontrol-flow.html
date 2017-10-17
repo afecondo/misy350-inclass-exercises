@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Control Flow Exercise</title>
+    <script>
+      let my_name = "Anthony Fecondo";
+      console.log(`My name is ${my_name.toUpperCase()}`);
+      console.log(`My name has ${my_name.length} characters`);
+
+    </script>
+  </head>
+  <body>
+    <h1>Check console for output</h1>
+    <script>
+    let pi = 3.145;
+      console.log(Math.random() * pi);
+      console.log(Math.floor(pi));
+
+    //the grade calculator
+
+    let grade = 91;
+    let letter_grade;
+    if (grade>=90) {
+      letter_grade = "A";
+      console.log(letter_grade);
+    } else if (grade>=80) {
+      letter_grade = "B";
+      console.log(letter_grade);
+    } else if (grade>=70){
+      letter_grade = "C"
+      console.log(letter_grade);
+    } else {
+      console.log(" Your grade is F");
+    }
+
+    //ternary operator
+
+    if (letter_grade=="A") {
+      console.log("you got iWatch 3");
+    } else {
+      console.log("nothing.");
+    }
+
+    //rewrite code from above using ternary operator
+
+    letter_grade == "A" ? console.log("you got iWatch 3")
+    : console.log("nothing.");
+
+    //how to use a switch statement to do the same thing
+
+    switch (true) {
+      case(grade>=90):
+        console.log("A in switch");
+
+        break;
+        case(grade>=80):
+          console.log("B in switch");
+
+          break;
+
+          case(grade>70):
+            console.log("C in switch");
+
+            break;
+
+    }
+
+
+    </script>
+  </body>
+</html>
