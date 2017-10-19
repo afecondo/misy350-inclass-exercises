@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>JS Function Exercises</title>
+  </head>
+  <body>
+    <h1>JS Functions - see console for output</h1>
+
+
+    <script>
+
+      function get_product (a,b) {    //simple function declaration
+        return a*b;
+      }
+    console.log(get_product(4,5));
+
+    const get_product1 = (a,b) => {    //rewrite original to an arrow function
+      return a*b;
+    }
+    console.log(get_product1(4,6));
+
+    const get_square = a => a*a;       //another arrow function, can remove () from a if only one variable
+                                      // if there is only one line the {} can be deleted
+    console.log(get_square(4));
+
+    //let letter_grade;  //global variable - how to tell, is it outside the curly brackets so yes this is a global variable
+    const get_letter_grade = (grade) => {
+      let letter_grade;
+      if (grade>=90) {
+        letter_grade="A";
+      } else if (grade >=80) {
+        letter_grade="B";
+      }else {
+        letter_grade="C";
+      }
+      return letter_grade;
+    }
+
+    console.log(get_letter_grade(95));
+
+    </script>
+  </body>
+</html>
